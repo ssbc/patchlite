@@ -4,10 +4,10 @@ const h = require('mutant/h')
 exports.gives = nest('app.html.page')
 exports.needs = nest('keys.sync.load', 'first')
 exports.create = function (api) {
-  return nest('app.html.page', keyPage)
+  return nest('app.html.page', configPage)
 
-  function keyPage (path) {
-    if (path !== '/lite') return
+  function configPage (path) {
+    if (path !== '/config') return
 
     const importKey = h('textarea', {
       placeholder: 'import an existing public/private key',
@@ -19,7 +19,7 @@ exports.create = function (api) {
       name: 'textarea'
     })
 
-    return h('LitePage', [
+    return h('Config', [
       h('section.secret', [
         h('p', [
           `Your secret key is:`,

@@ -1,8 +1,7 @@
+const bulk = require('bulk-require')
+
 module.exports = {
-  patchlite: {
-    config: require('./config'),
-    blob: require('./blob.js'),
-    page: require('./page'),
-    invite: require('./invite')
-  }
+  patchlite: bulk(__dirname, [
+    './!(node_modules)/**/*.js'
+  ])
 }
