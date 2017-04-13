@@ -1,0 +1,54 @@
+{
+  "name": "patchlite",
+  "version": "0.0.0",
+  "description": "A browser client for the Scuttlebutt network",
+  "main": "index.js",
+  "scripts": {
+    "build": "mkdir -p build && browserify main.js | indexhtmlify --title patchbay > build/index.html",
+    "server": "ecstatic build",
+    "start": "npm-run-all -s build server",
+    "test:deps": "dependency-check . && dependency-check . --extra --no-dev -i es2040",
+    "test:lint": "standard",
+    "test:node": "NODE_ENV=test run-default tape test/*.js --",
+    "test:coverage": "NODE_ENV=test nyc npm run test:node",
+    "test:coverage:report": "nyc report --reporter=lcov npm run test:node",
+    "test": "npm-run-all -s test:node test:lint test:deps"
+  },
+  "browserify": {
+    "transform": [
+      "es2040"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahdinosaur/patchlite.git"
+  },
+  "keywords": [],
+  "author": "Mikey <michael.williams@enspiral.com> (http://dinosaur.is)",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ahdinosaur/patchlite/issues"
+  },
+  "homepage": "https://github.com/ahdinosaur/patchlite#readme",
+  "devDependencies": {
+    "browserify": "^14.3.0",
+    "dependency-check": "^2.7.0",
+    "indexhtmlify": "^1.3.1",
+    "node-dev": "^3.1.3",
+    "npm-run-all": "^4.0.1",
+    "nyc": "^10.1.2",
+    "run-default": "^1.0.0",
+    "standard": "^8.6.0",
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "depject": "^4.1.0",
+    "depnest": "^1.3.0",
+    "ecstatic": "^2.1.0",
+    "es2040": "^1.2.3",
+    "patchbay": "github:ssbc/patchbay#patchlite",
+    "patchcore": "^0.5.0",
+    "picknmix": "github:ssbc/patchbay#patchlite",
+    "setimmediate": "^1.0.5"
+  }
+}
