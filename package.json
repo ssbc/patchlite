@@ -50,9 +50,8 @@
     "ecstatic": "^2.1.0",
     "es2040": "^1.2.3",
     "mutant": "^3.18.0",
-    "patchbay": "github:ssbc/patchbay",
+    "patchbay": "^7.3.0",
     "patchcore": "^0.5.0",
-    "picknmix": "github:ssbc/patchbay#patchlite",
     "request-idle-callback": "^1.0.2",
     "setimmediate": "^1.0.5",
     "ssb-ref": "^2.6.2"
