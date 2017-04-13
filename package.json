@@ -4,7 +4,7 @@
   "description": "A browser client for the Scuttlebutt network",
   "main": "index.js",
   "scripts": {
-    "build": "mkdir -p build && browserify main.js | indexhtmlify --title patchbay > build/index.html",
+    "build": "mkdir -p build && browserify main.js | indexhtmlify --title patchlite > build/index.html",
     "server": "ecstatic build",
     "start": "npm-run-all -s build server",
     "test:deps": "dependency-check . && dependency-check . --extra --no-dev -i es2040",
@@ -46,9 +46,12 @@
     "depnest": "^1.3.0",
     "ecstatic": "^2.1.0",
     "es2040": "^1.2.3",
+    "mutant": "^3.18.0",
     "patchbay": "github:ssbc/patchbay",
     "patchcore": "^0.5.0",
     "picknmix": "github:ssbc/patchbay#patchlite",
-    "setimmediate": "^1.0.5"
+    "request-idle-callback": "^1.0.2",
+    "setimmediate": "^1.0.5",
+    "ssb-ref": "^2.6.2"
   }
 }

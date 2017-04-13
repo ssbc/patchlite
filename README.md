@@ -71,7 +71,7 @@ This will build an html file at `build/index.html` and start a static file serve
 
 Browse to <http://localhost:8000#> with your invite code appended on the end of the address. (`#ws://localhost:8989...`)
 
-TODO have a successful connection
+After a few moments when it's done, refresh the page. TODO fix this
 
 ## license
 
