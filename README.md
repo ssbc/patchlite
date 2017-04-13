@@ -77,6 +77,8 @@ You should see a page load and then automatically refresh, that is the invite be
 
 When you load the page again, you will be loading your feed from your local `sbot` over a WebSocket, it will take some time.
 
+If you want to change your key or remote configuration, enter `/config` in the "location bar" (top-right text field).
+
 ## license
 
 AGPL-3.0
