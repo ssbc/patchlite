@@ -43,16 +43,19 @@ exports.create = function (api) {
         h('p', [
           `Your WebSocket remote is:`,
           h('pre', h('code', localStorage.remote)),
-          h('button', {
-            events: {
-              click: function (ev) {
-                ev.preventDefault()
+          h('form', [
+            importRemote,
+            h('button', {
+              events: {
+                click: function (ev) {
+                  ev.preventDefault()
 
-                localStorage.remote = importRemote.value
-                alert('Your WebSocket remote has been updated')
+                  localStorage.remote = importRemote.value
+                  alert('Your WebSocket remote has been updated')
+                }
               }
-            }
-          }, 'Import')
+            }, 'Import')
+          ])
         ])
       ])
     ])

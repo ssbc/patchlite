@@ -46,7 +46,7 @@
     "depnest": "^1.3.0",
     "ecstatic": "^2.1.0",
     "es2040": "^1.2.3",
-    "patchbay": "github:ssbc/patchbay#patchlite",
+    "patchbay": "github:ssbc/patchbay",
     "patchcore": "^0.5.0",
     "picknmix": "github:ssbc/patchbay#patchlite",
     "setimmediate": "^1.0.5"
