@@ -8,6 +8,7 @@ const patchcore = require('patchcore')
 
 // polyfills
 require('setimmediate')
+require('array-includes').shim()
 
 // from more specialized to more general
 const sockets = combine(

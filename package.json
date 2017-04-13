@@ -43,6 +43,7 @@
     "tape": "^4.6.3"
   },
   "dependencies": {
+    "array-includes": "^3.0.2",
     "bulk-require": "^1.0.0",
     "bulkify": "^1.4.2",
     "depject": "^4.1.0",
@@ -51,7 +52,7 @@
     "es2040": "^1.2.3",
     "mutant": "^3.18.0",
     "patchbay": "^7.3.0",
-    "patchcore": "^0.5.0",
+    "patchcore": "github:ssbc/patchcore#browser-gossip",
     "request-idle-callback": "^1.0.2",
     "setimmediate": "^1.0.5",
     "ssb-ref": "^2.6.2"

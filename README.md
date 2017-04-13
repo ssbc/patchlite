@@ -9,9 +9,11 @@ TODO
 - [x] get key import / export working
 - [x] get remote change working
 - [x] document how to setup
-- [ ] use an invite and connect to remote successfully ([patchbay@6](https://github.com/ssbc/patchbay/blob/v6/modules_basic/invite.js))
-- [ ] load messages from remote
-- [ ] ensure browser crypto works
+- [x] use an invite and connect to remote successfully ([patchbay@6](https://github.com/ssbc/patchbay/blob/v6/modules_basic/invite.js))
+- [x] load messages from remote
+- [ ] infinite scroll
+- [x] public messages
+- [ ] private messages
 
 ## Setup
 
@@ -71,7 +73,11 @@ This will build an html file at `build/index.html` and start a static file serve
 
 Browse to <http://localhost:8000#> with your invite code appended on the end of the address. (`#ws://localhost:8989...`)
 
-After a few moments when it's done, refresh the page. TODO fix this
+You should see a page load and then automatically refresh, that is the invite being consumed.
+
+When you load the page again, you will be loading your feed from your local `sbot` over a WebSocket, it will take some time.
+
+If you want to change your key or remote configuration, enter `/config` in the "location bar" (top-right text field).
 
 ## license
 
