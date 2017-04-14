@@ -37,7 +37,7 @@ Set a WebSocket port in your config file (`~/.ssb/config`).
 }
 ```
 
-Install Patchlite (an browser interface for the your scuttlebutt database)
+Install Patchlite (a browser interface for the your scuttlebutt database)
 
 ```sh
 git clone https://github.com/ssbc/patchlite.git
