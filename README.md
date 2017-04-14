@@ -4,17 +4,6 @@ A browser client for the Scuttlebutt network
 
 _work in progress_
 
-TODO
-
-- [x] get key import / export working
-- [x] get remote change working
-- [x] document how to setup
-- [x] use an invite and connect to remote successfully ([patchbay@6](https://github.com/ssbc/patchbay/blob/v6/modules_basic/invite.js))
-- [x] load messages from remote
-- [x] infinite scroll
-- [x] public messages
-- [ ] private messages
-
 ## Setup
 
 Install Scuttlebot (your gossip server)
