@@ -50,7 +50,7 @@
     "depnest": "^1.3.0",
     "ecstatic": "^2.1.0",
     "es2040": "^1.2.3",
-    "mutant": "^3.18.0",
+    "mutant": "github:ahdinosaur/mutant#request-idle-callback",
     "patchbay": "^7.3.0",
     "patchcore": "github:ssbc/patchcore#browser-gossip",
     "setimmediate": "^1.0.5",
