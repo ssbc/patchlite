@@ -52,7 +52,7 @@
     "es2040": "^1.2.3",
     "mutant": "github:ahdinosaur/mutant#request-idle-callback",
     "patchbay": "^7.3.0",
-    "patchcore": "github:ssbc/patchcore#browser-gossip",
+    "patchcore": "^0.5.1",
     "setimmediate": "^1.0.5",
     "ssb-ref": "^2.6.2"
   }
