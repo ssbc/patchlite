@@ -17,7 +17,12 @@
   "latest": "source",
   "latestSequence": "async",
   "whoami": "sync",
+  "progress": "sync",
+  "status": "sync",
+  "getVectorClock": "async",
+  "seq": "async",
   "usage": "sync",
+  "clock": "async",
   "plugins": {
     "install": "source",
     "uninstall": "source",
@@ -31,21 +36,25 @@
     "ping": "duplex",
     "connect": "async",
     "changes": "source",
-    "reconnect": "sync"
-  },
-  "friends": {
-    "all": "async",
-    "hops": "async",
-    "createFriendStream": "source",
-    "get": "sync"
+    "reconnect": "sync",
+    "enable": "sync",
+    "disable": "sync"
   },
   "replicate": {
     "changes": "source",
-    "upto": "source"
+    "upto": "source",
+    "request": "sync"
+  },
+  "friends": {
+    "get": "async",
+    "createFriendStream": "source",
+    "hops": "async"
   },
   "blobs": {
     "get": "source",
+    "getSlice": "source",
     "add": "sink",
+    "rm": "async",
     "ls": "source",
     "has": "async",
     "size": "async",
@@ -60,22 +69,31 @@
     "accept": "async",
     "use": "async"
   },
-  "block": {
-    "isBlocked": "sync"
-  },
   "private": {
     "publish": "async",
     "unbox": "sync"
   },
-  "links2": {
-    "read": "source",
-    "dump": "source"
-  },
   "query": {
-    "read": "source",
-    "dump": "source"
+    "read": "source"
+  },
+  "links2": {
+    "read": "source"
   },
   "ws": {
     "getAddress": "sync"
+  },
+  "fulltext": {
+    "search": "source"
+  },
+  "contacts": {
+    "stream": "source",
+    "get": "async"
+  },
+  "about": {
+    "stream": "source",
+    "get": "async"
+  },
+  "backlinks": {
+    "read": "source"
   }
 }

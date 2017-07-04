@@ -51,8 +51,8 @@
     "ecstatic": "^2.1.0",
     "es2040": "^1.2.3",
     "mutant": "github:ahdinosaur/mutant#request-idle-callback",
-    "patchbay": "7.3.1",
-    "patchcore": "^0.5.1",
+    "patchbay": "github:ssbc/patchbay#patchlite-friendly",
+    "patchcore": "^1.8.1",
     "setimmediate": "^1.0.5",
     "ssb-ref": "^2.6.2"
   }
